@@ -6,4 +6,6 @@ b = 100
 print('Loading function')
 
 def lambda_handler(event, context):
-  print(random.randint(a, b))
+  result = random.randint(a, b)
+  print(result)
+  return result
